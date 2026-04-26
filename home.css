@@ -1,0 +1,1022 @@
+/* =========================
+   HERO / SECCIÓN PRINCIPAL
+========================= */
+
+/* =========================
+   HERO PROFESIONAL
+========================= */
+
+.hero {
+  padding: 80px 20px;
+  background: #f5f7fa;
+}
+
+.hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TÍTULO */
+.hero h2 {
+  font-size: 34px;
+  color: #2d5fa4;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* TEXTO */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* =========================
+   SLIDER GENERAL
+========================= */
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+/* Slides */
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto encima */
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+}
+
+.caption h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  font-size: 1.2rem;
+}
+
+/* Flechas */
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Dots */
+
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  display: inline-block;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #3568a8;
+}
+
+/* IMAGEN */
+.hero-img {
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.hero-img img {
+  width: 100%;
+  display: block;
+}
+
+/* =========================
+   SECCIÓN GENERAL (REUTILIZABLE)
+========================= */
+
+.section {
+  padding: 60px 20px;
+}
+
+.section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* =========================
+   UTILIDADES
+========================= */
+
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+/* =========================
+   GALERIA
+========================= */
+.galeria {
+  padding: 80px 20px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.galeria-dots {
+  display: flex;
+  justify-content: center; /* 🔥 centra horizontal */
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.img-click {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img-click:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   MODAL (LIGHTBOX)
+========================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* BOTON CERRAR */
+.cerrar {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* =========================
+   SLIDER
+========================= */
+
+.slider {
+  padding: 80px 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-container {
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 767px) {
+  .slider-container {
+    height: 220px;
+  }
+}
+/* SLIDES */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* IMAGEN */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 clave */
+}
+
+/* =========================
+   GRID 2 COLUMNAS
+========================= */
+
+/* =========================
+   INFO INSTITUCIONAL
+========================= */
+
+.info-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-section h2 {
+  color: #2d5fa4;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.info-section .info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* IMAGENES */
+.slides img {
+  width: 100%;
+  display: none;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.slides img.active {
+  display: block;
+}
+
+/* DOTS */
+.dots {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #2d5fa4;
+}
+
+
+
+.referencia-section{
+    padding:60px 20px;
+}
+
+.referencia-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.referencia-text p{
+    font-size:14px;
+    color:#444;
+    margin-bottom:10px;
+}
+
+.pdf-box{
+    border:1px solid #2b66b1;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.pdf-info{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.pdf-icon{
+    background:red;
+    color:#fff;
+    padding:10px;
+    font-weight:bold;
+    border-radius:4px;
+}
+
+.btn-download{
+    background:#4CAF50;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.referencia-img img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* HORARIO */
+.horario-section{
+    padding:60px 20px;
+}
+
+.horario-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.horario-img img{
+    width:100%;
+    border-radius:10px;
+}
+
+.horario-text h4{
+    color:#2b66b1;
+    margin-top:15px;
+}
+
+.horario-text p{
+    font-size:14px;
+    margin:5px 0;
+}
+
+
+
+/* =========================
+   PUESTOS DE SALUD
+========================= */
+
+.puestos-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.puestos-section h2 {
+  color: #2d5fa4;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.puestos-grid {
+  display: grid;
+  gap: 40px;
+}
+
+/* CARD */
+.puesto-card {
+  text-align: center;
+}
+
+#modal-img-puesto {
+  display: none;
+}
+
+.modal-puesto.active #modal-img-puesto {
+  display: block;
+}
+
+.puesto-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.puesto-card h3 {
+  color: #2d5fa4;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* BOTON */
+.btn-info {
+  background: #2d5fa4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-puesto {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-puesto.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.cerrar-modal {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* =========================
+   MODAL ESTILO INSTITUCIONAL
+========================= */
+
+.modal-puesto {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-puesto.active {
+  display: flex;
+}
+
+/* CAJA */
+.modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+}
+
+/* IMAGEN */
+.modal-content img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* TITULO */
+.modal-content h2 {
+  color: #2d5fa4;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* LINEAS */
+.linea {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.linea strong {
+  color: #2d5fa4;
+  margin-right: 5px;
+}
+
+/* ESPECIALIDADES */
+.titulo-especialidades {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2d5fa4;
+}
+
+.lista-especialidades {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.lista-especialidades p {
+  margin: 5px 0;
+}
+
+/* BOTON CERRAR */
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* móvil */
+@media (max-width: 767px) {
+  .puestos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .puestos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .puestos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* GRID RESPONSIVO REAL */
+.puestos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.puesto-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.puesto-card:hover {
+  transform: translateY(-5px);
+}
+
+.puesto-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BOTÓN */
+.btn-info {
+  margin-top: 10px;
+  background: #2d5fa4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* MODAL */
+.modal-puesto {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-puesto.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* CERRAR */
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* ESPECIALIDADES */
+#modal-especialidades p {
+  background: #f5f7fa;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* =========================
+   PUESTOS DE SALUD
+========================= */
+
+.puestos-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.puestos-section h2 {
+  color: #2d5fa4;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.puestos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.puesto-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.puesto-card:hover {
+  transform: translateY(-5px);
+}
+
+.puesto-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.puesto-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* BOTÓN */
+.btn-info {
+  background: #2d5fa4;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-puesto {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-puesto.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* CERRAR */
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* ESPECIALIDADES */
+#modal-especialidades p {
+  background: #f5f7fa;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+/* CONTENEDOR */
+#modal-especialidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🔥 2 columnas */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+
+/* CUANDO HAY MUCHAS → 2 COLUMNAS */
+#modal-especialidades.grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ITEMS */
+#modal-especialidades p {
+  background: #f5f7fa;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+
+/* =========================
+   VIDEO HOME
+========================= */
+
+.home-video {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TITULO */
+.home-video-title {
+  color: #2d5fa4;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* CONTENEDOR */
+.home-video-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* VIDEO */
+.home-video-container video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* =========================
+   MODAL PUESTOS (UNIFICADO)
+========================= */
+
+.modal-puesto {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-puesto.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+
+/* IMAGEN */
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* CERRAR */
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* ESPECIALIDADES */
+#modal-especialidades {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#modal-especialidades.grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#modal-especialidades p {
+  background: #f5f7fa;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  #modal-especialidades.grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .info-section .info-grid {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-section .info-grid {
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+  }
+}
+/* =========================
+   GOVBAR (BARRA SUPERIOR)
+========================= */
+
+.govbar {
+  background: #1f4aa8; /* azul tipo gov */
+  padding: 8px 0;
+}
+
+.govbar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.gov-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,66 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+:root {
+  --color-primary: #0a2a66;
+  --color-secondary: #3366aa;
+  --color-light: #f5f7fa;
+  --color-text: #333;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--color-text);
+  background: white;
+
+  position: relative; /* aquí */
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   IMÁGENES (FIX IMPORTANTE)
+========================= */
+img {
+  max-width: 100%;
+  height: auto; /* 🔥 CLAVE */
+  display: block;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   LISTAS
+========================= */
+ul {
+  list-style: none;
+}
+
+body.menu-open {
+  overflow: hidden;
+}

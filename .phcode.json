@@ -1,0 +1,7 @@
+{
+    "livePreviewUseDevServer": false,
+    "livePreviewServerURL": "https://proyectbuilding.web.app",
+    "livePreviewServerProjectPath": "/",
+    "livePreviewHotReloadSupported": true,
+    "livePreviewFramework": "Custom"
+}

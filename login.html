@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Soacha</title>
+
+  <!-- CSS (ORDEN IMPORTANTE) -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+     <div class="menu-overlay" id="menu-overlay"></div>
+  <!-- =========================
+        HEADER / NAVBAR
+  ========================== -->
+  
+  <div class="govbar">
+  <div class="container govbar-container">
+    
+    <div class="govbar-left">
+      <img src="images/logogov.jpg" alt="gov.co" class="gov-logo">
+    </div>
+
+  </div>
+</div>
+ <header class="header">
+
+  <!-- =========================
+       TOPBAR
+  ========================== -->
+  <div class="topbar">
+    <div class="container topbar-container">
+       
+
+      <div class="topbar-left">
+        <img src="images/logo.png" alt="Logo" class="logo-img">
+
+        <div>
+          <h1>Empresa Social del Estado</h1>
+          <span>Región de Salud Soacha</span>
+        </div>
+      </div>
+
+      <div class="topbar-right">
+        <img src="images/logo-alcaldia.png" alt="Logo derecho">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <div class="navbar">
+    <div class="container">
+
+      <!-- HAMBURGUESA -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <!-- NAV -->
+      <nav class="nav" id="nav">
+
+        <!-- INICIO -->
+        <div class="nav-item">
+       <a href="index.html" class="nav-link">Inicio</a>
+
+
+          <div class="dropdown">
+
+            <div class="dropdown-img">
+              <!--ESTA IMAGEN ES LA QUE ROTA -->
+              <img id="img-inicio" src="images/persona1.jpg" alt="Inicio">
+            </div>
+
+            <div class="dropdown-links">
+              <a href="index.html">Inicio</a>
+              <a href="docencia.html">Docencia</a>
+              <a href="investigacion.html">Investigación</a>
+            </div>
+
+          </div>
+        </div>
+
+       
+<div class="nav-item">
+          <a href="#" class="nav-link">Atencion al usuario</a>
+
+          <div class="dropdown">
+
+            <div class="dropdown-img">
+              <!--  TAMBIÉN PUEDE ROTAR -->
+              <img id="img-atencion" src="images/persona1.jpg" alt="Información">
+            </div>
+
+            <div class="dropdown-links">
+              
+              
+                
+              <a href="SIAU.html">Atencion al usuario</a> 
+               <a href="informes.html">Informes</a>  
+               <a href="radicacion.html">Radicacion PQRS</a>  
+               <a href="mecanismosdecontacto.html">Solicitud de citas medicas</a>  
+             
+            </div>
+
+          </div>
+        </div>
+ <!-- INFORMACIÓN -->
+        
+          <a href="transparencia.html" class="nav-link">información pública</a>
+
+          
+      
+         <!-- BOTÓN INGRESO -->
+    <a href="login.html" class="btn-ingreso">Ingreso</a>
+
+
+      </nav>
+    </div>
+  </div>
+
+
+</header>
+
+  <!-- =========================
+        CONTENIDO PRINCIPAL
+  ========================== -->
+  
+  <main class="login-container">
+    
+  <div class="login-card">
+
+    <div class="login-header">
+      <h2>Iniciar sesión</h2>
+      <p>Accede a los módulos del sistema</p>
+    </div>
+
+    <form class="login-form" action="#" method="POST">
+      
+      <div class="input-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+      </div>
+
+      <div class="login-options">
+        <label>
+          <input type="checkbox"> Recordarme
+        </label>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+
+  <a href="indexintranet.html" class="btn-login">Ingresar</a>
+      
+      
+    </form>
+
+  </div>
+</main>
+  
+
+  <!-- =========================
+        FOOTER
+  ========================== -->
+  
+<!-- =========================
+     LOGOS INSTITUCIONALES
+========================= -->
+<section class="logos-section">
+
+  <div class="container logos-container">
+    <img src="images/logo1.png" alt="">
+    <img src="images/logo2.png" alt="">
+    <img src="images/logo3.png" alt="">
+    <img src="images/logo4.png" alt="">
+    <img src="images/logo5.png" alt="">
+  </div>
+
+</section>
+
+<!-- =========================
+     LÍNEA ROJA
+========================= -->
+<div class="divider-red"></div>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="footer">
+
+  <div class="footer-container container">
+
+    <!-- CONTACTO -->
+    <div class="footer-col">
+      <h3>Datos de Contacto</h3>
+      <p>Dirección Sede Asistencial: Calle 13 No. 10 - 60 Soacha Cundinamarca.</p>
+      <p>Dirección Sede Administrativa: Calle 13 No. 9-97 Soacha Cundinamarca.</p>
+      <p>Teléfono: +57 (601) 730 92 30</p>
+      <p>Email: atencionalusuario@hmgy.gov.co</p>
+      <p>Notificaciones judiciales: notificacionesjudiciales@hmgy.gov.co</p>
+      <p>Política de Tratamiento de datos Personales | Términos y Condiciones</p>
+      <p>©2020 Copyright Hospital Mario Gaitan Yanguas de SoachaTodos los derechos reservados</p>
+    </div>
+
+    <!-- REDES -->
+    <div class="footer-col center">
+
+  <h3>Redes sociales</h3>
+
+  <!-- ICONOS -->
+  <div class="social">
+    <img src="images/instagram.png">
+    <img src="images/facebook.png">
+    <img src="images/twitter.png">
+    <img src="images/youtube.png">
+  </div>
+
+  <!-- LOGO PRINCIPAL -->
+  <div class="footer-main-logo">
+    <img src="images/logo.png" alt="">
+  </div>
+
+  <!-- TEXTO -->
+  <p class="footer-text">
+    Empresa Social del Estado<br>
+    Región de Salud Soacha
+  </p>
+
+  <!-- LOGOS INSTITUCIONALES -->
+  <div class="footer-logos-small">
+    <img src="images/govco.png">
+    <img src="images/logo-alcaldia.png">
+  </div>
+
+</div>
+
+  </div>
+
+</footer>
+
+   <!-- =========================
+        JS
+  ========================== -->
+<script src="servicios.js"></script>
+<script src="tarjetas.js"></script>
+<script src="main.js"></script>
+<script src="slider.js"></script>
+<script src="sliders.js"></script>
+<script src="puntos.js"></script>
+<script src="galeriamodal.js"></script>
+<script src="puestos.js"></script>
+<script src="menuhamburgesa.js"></script>
+
+</body>
+</html>

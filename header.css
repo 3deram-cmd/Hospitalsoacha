@@ -1,0 +1,268 @@
+/* =========================
+   HEADER GENERAL
+========================= */
+
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+/* =========================
+   TOPBAR (AZUL)
+========================= */
+
+.topbar {
+  background: #3568a8;
+  color: white;
+  padding: 12px 0;
+}
+
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* IZQUIERDA */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* LOGO IZQUIERDO */
+.logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* TEXTO */
+.topbar-left h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.topbar-left span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+
+/* LOGO DERECHO */
+.topbar-right img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* =========================
+   NAVBAR (GRIS)
+========================= */
+
+.navbar {
+  background: #f2f2f2;
+  padding: 12px 0;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: auto;
+}
+
+/* LINKS */
+.nav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #2d5fa4;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   DROPDOWN PRO
+========================= */
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Área invisible anti-corte */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 15px;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  width: 380px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ACTIVACIÓN (DESKTOP) */
+.nav-item:hover .dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* IMAGEN */
+.dropdown-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* LINKS */
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown-links a {
+  color: #333;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.dropdown-links a:hover {
+  color: #2d5fa4;
+  transform: translateX(3px);
+}
+
+/* =========================
+   HAMBURGUESA
+========================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* =========================
+   FIX MOBILE Z-INDEX
+========================= */
+
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+.nav {
+  height: auto;
+}
+
+
+/* =====================================================
+   🔥 MOBILE FIX (NO ROMPE DESKTOP)
+===================================================== */
+
+@media (max-width: 767px) {
+
+  /* HAMBURGUESA visible */
+  .menu-toggle {
+    display: block;
+    z-index: 9999;
+  }
+
+  /* NAV */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background: white;
+
+    display: none;
+    flex-direction: row; /* 🔥 horizontal */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  /* ITEMS */
+  .nav-item {
+    display: block;
+    height: auto;
+  }
+
+  /* LINKS */
+  .nav a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  /* DROPDOWN */
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 220px;
+    padding: 10px;
+
+    display: none;
+    flex-direction: column;
+
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .nav-item.active .dropdown {
+    display: flex;
+  }
+
+  /* OCULTAR IMAGEN */
+  .dropdown-img {
+    display: none;
+  }
+
+}

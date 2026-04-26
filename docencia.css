@@ -1,0 +1,222 @@
+/* =========================
+   DOCENCIA HERO
+========================= */
+
+.docencia-hero {
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+.docencia-title {
+  color: #2d5fa4;
+  font-size: 28px;
+  font-weight: 700;
+
+  /* 🔥 estilo institucional */
+  border-bottom: 2px solid #2d5fa4;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+
+/* =========================
+   CONTENIDO DOCENCIA
+========================= */
+
+.docencia-contenido {
+  padding: 60px 20px;
+}
+
+/* GRID */
+.docencia-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXTO */
+.docencia-texto h3 {
+  color: #2d5fa4;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.docencia-texto p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* IMAGEN */
+.docencia-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+/* =========================
+   LINEA MODIFICADA
+========================= */
+
+.linea-azul.small {
+  width: 200px;
+  height: 2px;
+  margin: 10px 0 20px;
+}
+
+/* =========================
+   VIDEO DOCENCIA
+========================= */
+
+.docencia-video {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TITULO */
+.video-title {
+  color: #2d5fa4;
+  font-size: 22px;
+
+  /* 🔥 mismo estilo */
+  border-bottom: 2px solid #2d5fa4;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+  padding-bottom: 5px;
+  text-align: center;
+}
+/* LINEA CENTRADA */
+.linea-azul.center {
+  margin: 10px auto 30px;
+}
+
+/* CONTENEDOR VIDEO */
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* VIDEO */
+.video-container video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* =========================
+   CONVENIOS
+========================= */
+
+.convenios {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.convenios-title {
+  color: #2d5fa4;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* GRID AUTO */
+.convenios-grid {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+
+  align-items: center;
+  justify-items: center;
+}
+
+/* LOGOS */
+.convenios-grid img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+/* HOVER (opcional) */
+.convenios-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   DOCUMENTACION DOCENCIA
+========================= */
+
+.docencia-doc {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TITULO */
+.docencia-doc-title {
+  color: #2d5fa4;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.docencia-doc-text {
+  max-width: 600px;
+  margin: 20px auto 40px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* CARD */
+.docencia-card {
+  border: 1px solid #2d5fa4;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ICONO */
+.docencia-icon {
+  background: red;
+  color: white;
+  font-weight: bold;
+  padding: 15px 10px;
+  border-radius: 6px;
+}
+
+/* INFO */
+.docencia-info h4 {
+  color: #2d5fa4;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.docencia-info p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* BOTON */
+.docencia-btn {
+  margin-left: auto;
+  background: #6fbf4b;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.docencia-btn:hover {
+  background: #5aa63d;
+}

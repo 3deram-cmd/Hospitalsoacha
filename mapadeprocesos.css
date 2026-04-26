@@ -1,0 +1,185 @@
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* ===== TITULO ===== */
+.titulo-wrapper {
+  background: #2d5fa4;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 30px 30px;
+}
+
+.titulo-wrapper h1 {
+  color: #fff;
+  margin: 0;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.mapa-container {
+  display: grid;
+  grid-template-columns: 120px 1fr 120px;
+  gap: 20px;
+  padding: 20px;
+
+  align-items: stretch; /* 🔥 clave para altura completa */
+}
+
+/* ===== LADOS ===== */
+.lado {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* 🔥 distribuye */
+}
+
+/* ICONOS */
+.icono-lado {
+  width: 80px;
+  position: relative;
+  z-index: 2; /* 🔥 encima de la barra */
+}
+
+/* ===== BARRAS LATERALES PNG ===== */
+.barra-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: auto;
+  z-index: 1;
+}
+
+/* ===== CONTENIDO ===== */
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ===== BLOQUES ===== */
+.bloque {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  align-items: start; /* 🔥 mejor alineación */
+}
+
+/* ===== RECTANGULOS ===== */
+.rectangulo {
+  background: #2d5fa4;
+  color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ===== SEPARADORES ===== */
+.separador.punteado {
+  border-top: 2px dashed #8bb3d9;
+  margin: 10px 0;
+}
+
+/* ===== ITEMS ===== */
+.items {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+
+/* FILAS */
+.fila-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fila-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.fila-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fila-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ===== ITEM ===== */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.item p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* ===== LINEAS DEBAJO ===== */
+.linea {
+  height: 8px;
+  border-radius: 20px;
+  width: 80%;
+  margin-top: 5px;
+}
+
+.linea.azul {
+  background: #2d5fa4;
+}
+
+.linea.amarilla {
+  background: #f2a900;
+}
+
+.linea.roja {
+  background: #e30613;
+}
+
+/* ===== BARRA CENTRAL ===== */
+.barra-central {
+  background: #2d5fa4;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* =========================
+   GOVBAR (BARRA SUPERIOR)
+========================= */
+
+.govbar {
+  background: #1f4aa8; /* azul tipo gov */
+  padding: 8px 0;
+}
+
+.govbar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.gov-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

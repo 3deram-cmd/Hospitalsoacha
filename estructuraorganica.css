@@ -1,0 +1,236 @@
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.organigrama {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* TÍTULO */
+.titulo-org {
+  color: #3568a8;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* =========================
+   SCROLL CONTENEDOR (CLAVE)
+========================= */
+.organigrama-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* barra scroll */
+.organigrama-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.organigrama-scroll::-webkit-scrollbar-thumb {
+  background: #3568a8;
+  border-radius: 4px;
+}
+
+/* =========================
+   ESTRUCTURA
+========================= */
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  min-width: 900px; /* IMPORTANTE para modo mapa */
+}
+
+/* NIVELES */
+.nivel {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+/* COLUMNAS GRANDES */
+.columnas {
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* COLUMNAS */
+.columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* SUBNIVELES */
+.subnivel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+/* =========================
+   CAJAS
+========================= */
+.box {
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 13px;
+  max-width: 220px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #ccc;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* COLORES */
+.azul {
+  background: #cfe2f3;
+  border-color: #3568a8;
+}
+
+.amarillo {
+  background: #ffe599;
+  border-color: #d6a700;
+}
+
+.naranja {
+  background: #f4b183;
+  border-color: #c55a11;
+}
+
+.verde {
+  background: #d9ead3;
+  border-color: #6aa84f;
+}
+
+/* =========================
+   LÍNEAS (CORRECTAS)
+========================= */
+
+/* SOLO desde el segundo nivel */
+.nivel:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: #999;
+  transform: translateX(-50%);
+}
+
+/* línea horizontal */
+.nivel:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  background: #999;
+  transform: translateX(-50%);
+}
+
+/* =========================
+   RESPONSIVE (MAPA)
+========================= */
+@media (max-width: 768px) {
+
+  .organigrama {
+    padding: 20px 10px;
+  }
+
+  .titulo-org {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  /* escala tipo mapa */
+  .organigrama-scroll .tree {
+    transform: scale(0.85);
+    transform-origin: top left;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .organigrama-scroll .tree {
+    transform: scale(0.75);
+  }
+
+}
+
+/* =========================
+   ORGANIGRAMA INFO
+========================= */
+
+.organigrama-info {
+  background: #f2f2f2;
+  padding: 80px 20px;
+}
+
+/* TITULO */
+.org-title {
+  color: #2d5fa4;
+  font-size: 26px;
+  margin: 0 auto 40px auto;
+  border-bottom: 2px solid #2d5fa4;
+  display: block;
+  width: fit-content;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+/* GRID */
+.org-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+/* TEXTO */
+.org-text p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 500px;
+}
+
+/* IMAGEN */
+.org-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+}
+
+/* =========================
+   GOVBAR (BARRA SUPERIOR)
+========================= */
+
+.govbar {
+  background: #1f4aa8; /* azul tipo gov */
+  padding: 8px 0;
+}
+
+.govbar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.gov-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,153 @@
+/* =========================
+   FOOTER BheASE
+========================= */
+
+.footer {
+  background: #3568a8;
+  color: white;
+  padding: 50px 0 20px;
+}
+.logos-section {
+  background: #f5f5f5;
+  padding: 20px 0;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logos-container img {
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.logos-container img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.divider-red {
+  width: 100%;
+  height: 5px;
+  background: red;
+}
+/* CONTENEDOR */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 🔥 centra vertical */
+  gap: 40px;
+}
+
+/* COLUMNAS */
+.footer-col {
+  flex: 1;
+}
+.footer-main-logo img {
+  height: 60px;
+  margin: 15px auto 10px;
+}
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.footer-col h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* CENTRADO */
+.footer-col.center {
+  text-align: center;
+}
+.footer-logos-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.footer-logos-small img {
+  height: 45px;
+  object-fit: contain;
+  opacity: 0.95;
+  transition: 0.3s;
+}
+
+.footer-logos-small img:hover {
+  transform: scale(1.05);
+}
+/* REDES */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social img:hover {
+  transform: scale(1.1);
+}
+
+/* LOGO CENTRAL */
+.footer-logo img {
+  height: 60px;
+  margin: 10px auto;
+}
+
+/* =========================
+   DIVISOR
+========================= */
+
+.footer-divider {
+  width: 100%;
+  height: 2px;
+  background: white;
+  margin: 30px 0;
+  opacity: 0.6;
+}
+
+/* =========================
+   LOGOS INFERIORES
+========================= */
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-logos img {
+  height: 40px;
+  object-fit: contain;
+}
+

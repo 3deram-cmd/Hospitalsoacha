@@ -1,0 +1,176 @@
+/* =========================
+   HUMANIZACION
+========================= */
+
+.humanizacion {
+  padding: 80px 20px;
+  background: #f5f7fa;
+}
+
+/* TITULO */
+.humanizacion-title {
+  color: #2d5fa4;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.humanizacion-title span {
+  font-weight: 700;
+}
+
+/* IMAGEN SUPERIOR */
+.humanizacion-img-top img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+/* BLOQUE INFERIOR */
+.humanizacion-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* TEXTO */
+.humanizacion-texto h3 {
+  color: #2d5fa4;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.humanizacion-texto p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* IMAGEN DERECHA */
+.humanizacion-img-bottom img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* =========================
+   PROGRAMA HUMANIZACION
+========================= */
+
+.programa-humanizacion {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.programa-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* TEXTO */
+.programa-texto h2 {
+  color: #2d5fa4;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.programa-texto p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* IMAGEN */
+.programa-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* =========================
+   DOCUMENTACION
+========================= */
+
+.documentacion {
+  padding: 60px 20px;
+  background: #f5f7fa;
+}
+
+/* TITULO */
+.documentacion-title {
+  color: #2d5fa4;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+/* 🔥 CENTRADO REAL */
+.documentacion-grid {
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.documento-card {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  align-items: center;
+  gap: 15px;
+
+  background: #fff;
+  border: 1px solid #cdddf5;
+  border-radius: 8px;
+  padding: 20px;
+
+  max-width: 700px; /* 🔥 CLAVE para centrar visualmente */
+  width: 100%;
+}
+
+/* PDF */
+.doc-left img {
+  width: 50px;
+}
+
+/* TEXTO */
+.doc-info h4 {
+  color: #2d5fa4;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.doc-info p {
+  font-size: 13px;
+  color: #5a7bbd;
+  margin: 2px 0;
+}
+
+/* BOTON */
+.doc-btn a {
+  background: #6bb36b;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* =========================
+   GOVBAR (BARRA SUPERIOR)
+========================= */
+
+.govbar {
+  background: #1f4aa8; /* azul tipo gov */
+  padding: 8px 0;
+}
+
+.govbar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.gov-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

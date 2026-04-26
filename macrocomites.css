@@ -1,0 +1,108 @@
+/* =========================
+   ACORDEÓN
+========================= */
+
+.accordion {
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+/* BOTÓN PRINCIPAL */
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 14px;
+  background: #3568a8;
+  color: white;
+  border: 1px solid #2c558c;
+  border-radius: 6px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: #2c558c;
+}
+
+/* ACTIVO */
+.accordion-item.active .accordion-header {
+  background: #2c558c;
+}
+
+/* ICONO */
+.icon {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* CONTENIDO */
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background: #f5f5f5;
+  border: 1px solid #999;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+/* MOSTRAR */
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* =========================
+   SUBMENÚ
+========================= */
+
+.sub-menu {
+  display: grid;
+  gap: 8px;
+}
+
+/* ITEMS */
+.sub-menu a {
+  display: block;
+  padding: 10px 14px;
+  background: white;
+  border-left: 4px solid #3568a8;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  transition: all 0.25s ease;
+}
+
+.sub-menu a:hover {
+  background: #eaf1fb;
+  transform: translateX(6px);
+}
+
+/* =========================
+   GOVBAR
+========================= */
+
+.govbar {
+  background: #1f4aa8;
+  padding: 8px 0;
+}
+
+.govbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.gov-logo {
+  height: 40px;
+  width: auto;
+}

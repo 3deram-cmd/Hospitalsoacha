@@ -1,0 +1,153 @@
+/* =========================
+   PETICION REAL
+========================= */
+
+.peticion {
+  padding: 60px 20px;
+  background: #f5f7fa;
+}
+
+.peticion .container {
+  max-width: 950px;
+  margin: auto;
+}
+
+/* TITULOS */
+.peticion-title {
+  font-size: 30px;
+  color: #1f3c88;
+  margin-bottom: 10px;
+}
+
+.peticion-subtitle {
+  font-size: 20px;
+  color: #2d5fa4;
+  margin-bottom: 20px;
+}
+
+/* TEXTOS */
+.peticion-text {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.peticion-note {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* SECCION */
+.peticion-section {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #1f3c88;
+}
+
+/* RADIOS */
+.peticion-radio {
+  display: flex;
+  gap: 25px;
+  margin: 15px 0 25px;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+/* INPUTS */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* TEXTAREA */
+textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+/* BOTON */
+.form-submit {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.form-submit button {
+  background: #2d5fa4;
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form-submit button:hover {
+  background: #1f4c88;
+}
+
+
+/* OCULTAR SUAVEMENTE */
+.peticion-datos {
+  transition: all 0.3s ease;
+}
+
+/* CONTADOR */
+#contador {
+  font-size: 12px;
+  color: #777;
+  margin-left: 10px;
+}
+
+/* UPLOAD */
+.peticion-upload {
+  margin-top: 30px;
+}
+
+.upload-box {
+  display: block;
+  border: 2px dashed #2d5fa4;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.upload-box input {
+  display: none;
+}
+
+/* RESPUESTA */
+.peticion-respuesta {
+  margin-top: 40px;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+}

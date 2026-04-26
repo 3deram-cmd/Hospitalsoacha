@@ -1,0 +1,184 @@
+/* =========================
+   SECCIÓN IMAGENOLOGÍA
+========================= */
+
+.imagenologia {
+  padding: 80px 20px;
+  background: #f2f2f2;
+}
+
+.imagenologia-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* TEXTO */
+.imagenologia-texto h2 {
+  color: #2d5fa4;
+  font-size: 26px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2d5fa4;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.imagenologia-title {
+  color: #2d5fa4;
+  font-size: 26px;
+
+  /* 🔥 subrayado pro */
+  display: block;
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  border-bottom: 2px solid #2d5fa4;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.imagenologia-texto p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* IMAGEN */
+.imagenologia-img img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.requisitos-img-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f5f7fa;
+}
+
+.requisitos-img {
+  width: 100%;
+  max-width: 700px; /* 🔥 controla tamaño en desktop */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+/* =========================
+   SERVICIOS IMÁGENES
+========================= */
+
+.servicios-img {
+  padding: 80px 20px;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.servicios-title {
+  color: #2d5fa4;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* ITEM */
+.servicio-item img {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.servicio-item h3 {
+  margin-top: 15px;
+  color: #2d5fa4;
+}
+
+/* ITEM INFERIOR CENTRADO */
+.servicio-item.full {
+  grid-column: span 2;
+}
+
+/* =========================
+   SLIDER IMÁGENES
+========================= */
+
+.slider-img {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.slider-title {
+  color: #2d5fa4;
+  margin-bottom: 30px;
+}
+
+/* CONTENEDOR */
+.slider-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* SLIDES */
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* IMAGEN */
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* DOTS */
+.slider-dots {
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #2d5fa4;
+}
+/* =========================
+   GOVBAR (BARRA SUPERIOR)
+========================= */
+
+.govbar {
+  background: #1f4aa8; /* azul tipo gov */
+  padding: 8px 0;
+}
+
+.govbar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.gov-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

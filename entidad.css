@@ -1,0 +1,127 @@
+/* =========================
+   TITULOS
+========================= */
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #2c5da1;
+  padding-bottom: 8px;
+
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-title span {
+  color: #2d5fa4;
+}
+
+/* =========================
+   SECCIÓN ENTIDAD
+========================= */
+.entidad {
+  padding: 80px 20px;
+}
+
+.entidad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.entidad-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.entidad-content {
+  width: 100%;
+  max-width: 600px;
+  border-left: 3px solid #2d5fa4;
+  padding-left: 40px;
+}
+
+.entidad-content h3 {
+  color: #2d5fa4;
+  margin: 25px 0 10px;
+  font-weight: 700;
+}
+
+.entidad-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* =========================
+   OBJETIVOS
+========================= */
+.objetivos {
+  padding: 80px 20px;
+}
+
+.objetivo-banner img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.objetivos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.objetivo-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.objetivo-card h4 {
+  color: #2d5fa4;
+  margin-bottom: 10px;
+}
+
+.objetivo-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTENEDOR AMPLIO
+========================= */
+.container.wide {
+  max-width: 1500px;
+}
+
+/* =========================
+   VIDEO ENTIDAD
+========================= */
+
+.entidad-video {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TITULO */
+.entidad-video-title {
+  color: #2d5fa4;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* CONTENEDOR */
+.entidad-video-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* VIDEO */
+.entidad-video-container video {
+  width: 100%;
+  border-radius: 12px;
+}
+

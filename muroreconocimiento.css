@@ -1,0 +1,103 @@
+/* =========================
+   MURO DE RECONOCIMIENTO
+========================= */
+
+.muro {
+  padding: 80px 20px;
+  background: #f5f7fa;
+}
+
+.muro-titulo {
+  text-align: center;
+  color: #2d5fa4;
+  margin-bottom: 10px;
+}
+
+.muro-bloque {
+  margin-top: 50px;
+}
+
+.muro-subtitulo {
+  color: #2d5fa4;
+  margin-bottom: 20px;
+}
+
+/* GRID FOTOS */
+.muro-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.muro-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* 🔥 controla la forma */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* VIDEO */
+.muro-video {
+  margin-top: 25px;
+}
+
+.muro-video video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TEXTO */
+.muro-texto {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+
+/* =========================
+   PORTADA MURO
+========================= */
+
+.muro-portada {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.muro-portada img {
+  width: 100%;
+  max-width: 900px; /* controla que no se vea gigante */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.muro-subtitulo {
+  color: #2d5fa4;
+  margin-bottom: 20px;
+  text-align: center; /* 🔥 centra el texto */
+}
+/* =========================
+   GOVBAR (BARRA SUPERIOR)
+========================= */
+
+.govbar {
+  background: #1f4aa8; /* azul tipo gov */
+  padding: 8px 0;
+}
+
+.govbar-container {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO */
+.gov-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+

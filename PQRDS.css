@@ -1,0 +1,91 @@
+/* =========================
+   PQRDS MAIN
+========================= */
+
+.pqrs {
+  padding: 60px 20px;
+  background: #f5f7fa;
+}
+
+.pqrs .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #2d5fa4;
+  text-decoration: none;
+}
+
+/* TITULOS */
+.pqrs-title {
+  font-size: 34px;
+  color: #1f3c88;
+  margin-bottom: 15px;
+}
+
+.pqrs-desc {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.pqrs-subtitle {
+  font-size: 22px;
+  color: #2d5fa4;
+  margin-bottom: 30px;
+}
+
+/* ITEM */
+.pqrs-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* ICONO */
+.pqrs-icon {
+  font-size: 40px;
+}
+
+/* CONTENIDO */
+.pqrs-content h3 {
+  margin: 0 0 8px;
+  color: #1f3c88;
+}
+
+.pqrs-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+/* BOTON */
+.pqrs-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #3a73d9;
+  color: white;
+  border-radius: 25px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pqrs-btn:hover {
+  background: #2d5fa4;
+}
+
+/* LINEA */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
